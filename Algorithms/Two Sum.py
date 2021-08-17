@@ -12,3 +12,6 @@ class Solution:
                     return[i,j]
 
 # here enumerate is used to make a tuple that gives the (index,value)
+# mem usage: 14.7 mb
+# runtime: O(n^2)
+# space: O(1)
