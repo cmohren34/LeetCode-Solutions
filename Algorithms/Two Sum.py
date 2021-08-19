@@ -5,6 +5,7 @@
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
+        # using the enumerate function here to seperate index and value
         for i, num1 in enumerate(nums):
             for j, num2 in enumerate(nums):
                 if i >= j: continue
