@@ -16,7 +16,7 @@ class Solution:
         
         # if reversing the integer made it go outside of the given bounds
         
-        if rev_x < -(2**31) or rev_x > 2**31 - 1:
+        if rev_x < -(2**31):
             return 0
         elif rev_x > 2**31 - 1:
             return 0
