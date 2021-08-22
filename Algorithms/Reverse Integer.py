@@ -8,14 +8,15 @@ class Solution:
         rev_string = str_x[::-1]
         
         # if it was a negatively signed integer and it now ends in an integer after being reversed
-        
         if rev_string[-1] == '-':
             rev_x = -1 * int(rev_string[:-1])
         else:
+            # turning back into an integer b/c the function 
+            # requires an integer to be returned
             rev_x = int(rev_string)
         
         # if reversing the integer made it go outside of the given bounds
-        
+        # [-2^31, 2^31 - 1], return 0
         if rev_x < -(2**31):
             return 0
         elif rev_x > 2**31 - 1:
