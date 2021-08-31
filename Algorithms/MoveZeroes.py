@@ -10,5 +10,6 @@ def moveZeroes(nums: List[int]) -> None:
 
 
 nums = [0,10,3,12]
+
 moveZeroes(nums)
 print(nums)
