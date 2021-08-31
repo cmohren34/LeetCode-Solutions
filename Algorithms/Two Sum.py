@@ -3,14 +3,20 @@
 # for example: if you are give a list that is [2,7,11,15] and the target = 9
 #    then you would return [0,1] because 2+7 = 9
 
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        # using the enumerate function here to seperate index and value
-        for i, num1 in enumerate(nums):
-            for j, num2 in enumerate(nums):
-                if i >= j: continue
-                if num1 + num2 == target: 
-                    return[i,j]
+from typing import List
+
+
+def twoSum(nums: List[int], target: int) -> List[int]:
+    # using the enumerate function here to seperate index and value
+    for i, num1 in enumerate(nums):
+        for j, num2 in enumerate(nums):
+            if i >= j: continue
+            if num1 + num2 == target:
+                #print([i,j]) 
+                return[i,j]
+
+nums = [2,7,11,15]
+twoSum(nums, target = 9)
 
 # here enumerate is used to make a tuple that gives the (index,value)
 # mem usage: 14.7 mb
